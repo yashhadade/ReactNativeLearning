@@ -29,6 +29,7 @@ const style = StyleSheet.create({
   FlatCards: {
     padding: 10,
     backgroundColor: '#f7a7a7ff',
+    borderRadius:10
   },
   threemainCard: {
     // flex:1,

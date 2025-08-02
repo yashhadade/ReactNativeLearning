@@ -12,14 +12,20 @@ import {
   ScrollView,
 } from 'react-native';
 import FlatCards from './components/FlatCards';
+import Elevated from './components/Elevated';
+import FancyCard from './components/FancyCard';
 
 function App(): JSX.Element {
-  const paddingTop = Platform.OS === 'android' ? StatusBar.currentHeight || 0 : 0;
+  const paddingTop =
+    Platform.OS === 'android' ? StatusBar.currentHeight || 0 : 0;
   const [isDarkMode, setIsDarMode] = useState(useColorScheme() === 'dark');
   return (
-    <SafeAreaView style={[{paddingTop}]}>
+    <SafeAreaView style={[{ paddingTop }]}>
       <ScrollView>
-      <FlatCards/>
+        <FlatCards />
+        <Elevated />
+        <FancyCard />
+        <FancyCard />
       </ScrollView>
     </SafeAreaView>
   );
