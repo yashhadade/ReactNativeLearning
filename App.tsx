@@ -14,6 +14,8 @@ import {
 import FlatCards from './components/FlatCards';
 import Elevated from './components/Elevated';
 import FancyCard from './components/FancyCard';
+import ActionCards from './components/ActionCards';
+import Contactlist from './components/contactlist';
 
 function App(): JSX.Element {
   const paddingTop =
@@ -25,7 +27,9 @@ function App(): JSX.Element {
         <FlatCards />
         <Elevated />
         <FancyCard />
-        <FancyCard />
+         <Contactlist/>
+        <ActionCards/>
+       
       </ScrollView>
     </SafeAreaView>
   );
