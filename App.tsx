@@ -16,6 +16,7 @@ import Elevated from './components/Elevated';
 import FancyCard from './components/FancyCard';
 import ActionCards from './components/ActionCards';
 import Contactlist from './components/contactlist';
+import FormValidation from './components/FormValidation';
 
 function App(): JSX.Element {
   const paddingTop =
@@ -24,12 +25,12 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={[{ paddingTop }]}>
       <ScrollView>
+        <FormValidation/>
         <FlatCards />
         <Elevated />
         <FancyCard />
          <Contactlist/>
         <ActionCards/>
-       
       </ScrollView>
     </SafeAreaView>
   );
