@@ -17,6 +17,7 @@ import FancyCard from './components/FancyCard';
 import ActionCards from './components/ActionCards';
 import Contactlist from './components/contactlist';
 import FormValidation from './components/FormValidation';
+import BackgroundColorChanger from './components/BackgroundColorChanger';
 
 function App(): JSX.Element {
   const paddingTop =
@@ -25,6 +26,7 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={[{ paddingTop }]}>
       <ScrollView>
+        <BackgroundColorChanger/>
         <FormValidation/>
         <FlatCards />
         <Elevated />

@@ -62,6 +62,7 @@ const FormValidation = () => {
         <View style={styles.formContainer}>
             <Text style={styles.title}>Password Generater</Text>
              <Formik
+             
        initialValues={{passwordLength:"" }}
        validationSchema={passwordSchema}
        onSubmit={values=>{
@@ -79,8 +80,10 @@ const FormValidation = () => {
          handleBlur,
          handleSubmit,
          handleReset,
+         
          /* and other goodies */
        }) => (
+        
          <>
          <View style={styles.inputWrapper}>
             <View style={styles.inputColumn}>
