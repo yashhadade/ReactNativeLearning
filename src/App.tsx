@@ -11,13 +11,14 @@ import {
   StatusBar,
   ScrollView,
 } from 'react-native';
-import FlatCards from './components/FlatCards';
-import Elevated from './components/Elevated';
-import FancyCard from './components/FancyCard';
-import ActionCards from './components/ActionCards';
-import Contactlist from './components/contactlist';
-import FormValidation from './components/FormValidation';
-import BackgroundColorChanger from './components/BackgroundColorChanger';
+import FlatCards from '../components/FlatCards';
+import Elevated from '../components/Elevated';
+import FancyCard from '../components/FancyCard';
+import ActionCards from '../components/ActionCards';
+import Contactlist from '../components/contactlist';
+import FormValidation from '../components/FormValidation';
+import BackgroundColorChanger from '../components/BackgroundColorChanger';
+import Dice from '../components/Dice';
 
 function App(): JSX.Element {
   const paddingTop =
@@ -26,6 +27,7 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={[{ paddingTop }]}>
       <ScrollView>
+        <Dice/>
         <BackgroundColorChanger/>
         <FormValidation/>
         <FlatCards />
