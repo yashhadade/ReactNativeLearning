@@ -48,7 +48,8 @@ const playDiceSound = () => {
     <View style={styles.container}>
       <DiceImage imageUrl={diceImage} />
       <TouchableOpacity onPress={rollDice}>
-        <Text style={styles.rollDiceBtnText}>Roll Dice</Text>
+        <Text 
+        style={styles.rollDiceBtnText}>Roll Dice</Text>
       </TouchableOpacity>
     </View>
   );
@@ -62,6 +63,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFF2F2',
+    margin:10
   },
   diceImage: {
     width: 200,
