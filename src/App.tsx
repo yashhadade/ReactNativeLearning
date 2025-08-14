@@ -20,6 +20,7 @@ import FormValidation from '../components/FormValidation';
 import BackgroundColorChanger from '../components/BackgroundColorChanger';
 import Dice from '../components/Dice';
 import CurrencyCalculeter from '../components/CurrencyCalculeter';
+import TickTakTo from '../components/TickTakTo';
 
 function App(): JSX.Element {
   const paddingTop =
@@ -28,6 +29,7 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={[{ paddingTop }]}>
       <ScrollView>
+        <TickTakTo/>
         <CurrencyCalculeter/>
         <Dice/>
         <BackgroundColorChanger/>
