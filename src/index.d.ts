@@ -19,3 +19,15 @@ declare module 'react-native-vector-icons/FontAwesome' {
 
   export default class FontAwesome extends React.Component<IconProps> {}
 }
+
+interface Product {
+  id:string,
+  name:string,
+  imageUrl:string,
+  originalPrice:number,
+  discountPrice:number;
+  offerPercentage:name;
+  rating:number;
+  ratingCount:number;
+  tags:string[];
+}
